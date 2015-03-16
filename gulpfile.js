@@ -55,6 +55,7 @@ gulp.task('scripts', ['lint'], function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+  gulp.watch('fonts/*', ['fonts']);
   gulp.watch('img/*', ['images']);
   gulp.watch('haml/*.haml', ['wrap']);
   gulp.watch('js/*', ['scripts']);
@@ -63,9 +64,15 @@ gulp.task('watch', function() {
 });
 
 // Deploy to GH pages
-gulp.task('deploy', ['images', 'wrap', 'sass', 'scripts'], function () {
+gulp.task('deploy', ['images', 'fonts', 'wrap', 'sass', 'scripts'], function () {
   return gulp.src(['./build/*', './build/**/*', 'CNAME'])
     .pipe(deploy())
+});
+
+// Copy fonts
+gulp.task('fonts', function(){
+  gulp.src('./fonts/*')
+  .pipe(gulp.dest('./build/fonts/'));
 });
 
 // Copy images
@@ -76,7 +83,7 @@ gulp.task('images', function(){
 
 // Build for deploy
 gulp.task('build', function(callback) {
-  return gulp.start('images', 'wrap', 'sass', 'scripts');
+  return gulp.start('images', 'fonts', 'wrap', 'sass', 'scripts');
 });
 
-gulp.task('default', ['wrap', 'images', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['wrap', 'fonts', 'images', 'sass', 'scripts', 'watch']);
