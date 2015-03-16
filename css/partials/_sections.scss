@@ -110,9 +110,24 @@
     margin-top: 0;
   }
 
-  ul li, p {
+  ul li, p, dl dd, dl dt {
     font-size: 1.1em;
     line-height: 1.9em;
+  }
+
+  dl dd, dl dt {
+    float: left;
+  }
+
+  dl {
+    overflow: hidden;
+  }
+
+  dl dt {
+    width: 18%;
+  }
+  dl dd {
+    width: 82%;
   }
 
   h1 {
