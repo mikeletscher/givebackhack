@@ -1,5 +1,5 @@
 .section {
-  padding: 25px 0;
+  padding: 35px 0;
 
   &.grey {
     background: #424242;
@@ -11,7 +11,8 @@
 
 }
 
-.hero {
+// Index hero
+.hero.section {
   padding: 90px 0;
   background: url(img/skyline.jpg) no-repeat 50% 60%;
   background-size: cover;
@@ -46,5 +47,25 @@
   h3 {
     font-size: 1.9em;
     font-weight: 300;
+  }
+}
+
+// Steps section
+.steps.section {
+  text-align: center;
+
+  img {
+    max-height: 100px;
+    max-width: 80%;
+  }
+
+  h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2em;
+    color: #FFF;
+    font-weight: 300;
+    width: 90%;
+    margin: 20px auto;
+    line-height: 1.4em;
   }
 }
