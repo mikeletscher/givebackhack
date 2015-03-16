@@ -10,3 +10,41 @@
   }
 
 }
+
+.hero {
+  padding: 90px 0;
+  background: url(img/skyline.jpg) no-repeat 50% 60%;
+  background-size: cover;
+
+  h1, h2, h3 {
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+
+  h2, h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-size: 6.2em;
+    margin-bottom: 15px;
+    font-family: "Blackout", sans-serif;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 14px;
+
+    .days {
+      font-size: 0.8em;
+    }
+  }
+
+  h3 {
+    font-size: 1.9em;
+    font-weight: 300;
+  }
+}

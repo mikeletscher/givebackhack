@@ -24,6 +24,10 @@
     text-transform: uppercase;
     letter-spacing: 0.64px;
     font-size: 1.1em;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .navbar-default .navbar-nav > li.button > a {
@@ -33,6 +37,12 @@
     margin-top: 5px;
     margin-right: 0;
     margin-left: 14px;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      background: #3FC9B5;
+    }
   }
 
   .navbar-default .navbar-toggle {

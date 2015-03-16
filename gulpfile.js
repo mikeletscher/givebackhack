@@ -57,7 +57,8 @@ gulp.task('scripts', ['lint'], function() {
 gulp.task('watch', function() {
   gulp.watch('fonts/*', ['fonts']);
   gulp.watch('img/*', ['images']);
-  gulp.watch('haml/*.haml', ['wrap']);
+  gulp.watch('haml/pages/*', ['wrap']);
+  gulp.watch('haml/*', ['wrap']);
   gulp.watch('js/*', ['scripts']);
   gulp.watch('css/**/*.scss', ['sass']);
   gulp.watch('css/*.scss', ['sass']);
