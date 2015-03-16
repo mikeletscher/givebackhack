@@ -1,0 +1,35 @@
+!!!
+%html{ lang: "en" }
+  %head
+    %title GiveBackHack - A Launchpad for Social Innovation
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
+    %link{ rel: "stylesheet", type: "text/css", href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" }
+    %link{ rel: "stylesheet", type: "text/css", href: "main.css"}
+
+  %body
+    .callout.header-container
+      .container
+        %nav.navbar.navbar-default
+          .container-fluid
+            .navbar-header
+              %button.navbar-toggle.collapsed{ type: "button", data-toggle: "collapse", data-target: "#tribe-navbar" }
+                %span.sr-only Toggle navigation
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.navbar-brand.logo{ href: "#" } GiveBackHack
+
+            #tribe-navbar.collapse.navbar-collapse
+              %ul.nav.navbar-nav.navbar-right
+                %li
+                  %a{ href: "#" } About
+                %li
+                  %a{ href: "#" } Schedule
+                %li.button
+                  %a.ghost-button{ href: "#" } Register
+
+    <%= contents %>
+
+    %script{ type: "text/javascript", src: "//use.typekit.net/vsk3slw.js" }
+    %script{ type: "text/javascript", src: "main.js" }
+
