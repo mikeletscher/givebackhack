@@ -25,3 +25,14 @@
 img.partial-width {
   max-width: 90%;
 }
+img.small-picture {
+  width: 50%;
+}
+
+// Grid
+.no-gutter {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

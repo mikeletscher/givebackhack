@@ -135,6 +135,34 @@
   }
 }
 
+// Contact page
+.social-contact {
+  i {
+    line-height: 1.4em;
+    font-size: 3.2em;
+  }
+  p {
+    padding-left: 10px;
+    margin: 0;
+  }
+}
+
+// Contact page organizers
+.organizers {
+  i {
+    margin: 4px;
+    font-size: 1.3em;
+  }
+
+  a {
+    transition: 0.3s all ease-in-out;
+  }
+
+  a:hover {
+    opacity: 0.4;
+  }
+}
+
 // Footer
 .footer.section {
   padding: 30px 0 20px;
