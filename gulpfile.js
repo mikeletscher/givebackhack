@@ -57,6 +57,7 @@ gulp.task('scripts', ['lint'], function() {
 gulp.task('watch', function() {
   gulp.watch('fonts/*', ['fonts']);
   gulp.watch('img/*', ['images']);
+  gulp.watch('img/**/*', ['images']);
   gulp.watch('haml/pages/*', ['wrap']);
   gulp.watch('haml/*', ['wrap']);
   gulp.watch('js/*', ['scripts']);
@@ -78,7 +79,7 @@ gulp.task('fonts', function(){
 
 // Copy images
 gulp.task('images', function(){
-  gulp.src('./img/*')
+  gulp.src(['./img/*', './img/**/*'])
     .pipe(gulp.dest('./build/img/'));
 });
 
