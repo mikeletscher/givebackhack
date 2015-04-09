@@ -15,31 +15,43 @@
 // Index hero
 .hero.section {
   padding: 90px 0;
-  background: url(img/skyline.jpg) no-repeat 50% 60%;
+  background: url(img/ccad.jpg) no-repeat 50% 60%;
   background-size: cover;
 
   h1, h2, h3 {
     margin: 0 auto;
     text-align: center;
-    color: #FFF;
+    color: #545454;
     text-transform: uppercase;
+    line-height: 1.2em;
   }
 
+  .large {
+    padding: 18px 28px;
+  }
+  
   h2, h3 {
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 2px;
   }
 
   h1 {
-    font-size: 6.2em;
+    font-size: 4.2em;
+    font-weight: 600;
+    color: #000;
     margin-bottom: 15px;
-    font-family: "Blackout", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
+  }
+
+  .pink {
+    color: #FF6AA7;
   }
 
   h2 {
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 14px;
 
+    color: #545454;
     .days {
       font-size: 0.8em;
     }
