@@ -29,7 +29,7 @@
   .large {
     padding: 18px 28px;
   }
-  
+
   h2, h3 {
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 2px;
@@ -37,18 +37,19 @@
 
   h1 {
     font-size: 4.2em;
-    font-weight: 600;
+    font-weight: 300;
     color: #000;
     margin-bottom: 15px;
     font-family: "Roboto Slab", sans-serif;
   }
 
   .pink {
+    font-weight: 600;
     color: #FF6AA7;
   }
 
   h2 {
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 14px;
 
     color: #545454;
@@ -60,6 +61,20 @@
   h3 {
     font-size: 1.9em;
     font-weight: 300;
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 1.4em;
+    }
+
+    & {
+      padding: 20px 15px;
+    }
   }
 }
 
